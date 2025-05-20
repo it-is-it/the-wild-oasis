@@ -1,4 +1,3 @@
-````markdown
 # 🌴 The Wild Oasis – Hotel Management Web App
 
 Welcome to **The Wild Oasis**, a user-friendly hotel management application designed to streamline hotel operations—from bookings and cabins to user management and dashboards. This project implements advanced **JavaScript**, **TypeScript**, **React**, and **database querying** skills in a modern web app built with real-time features, responsive design, and a clean UI.
@@ -85,6 +84,7 @@ Welcome to **The Wild Oasis**, a user-friendly hotel management application desi
 git clone https://github.com/BaraSedih11/the-wild-oasis.git
 cd the-wild-oasis
 ```
+
 ````
 
 2. **Install dependencies**
@@ -141,3 +141,4 @@ Please feel free to contact me for any issues or improvements.
 **Ishwor Timalsina**
 🔗 [ishwortimalsina.com.np](https://ishwortimalsina.com.np)
 🐙 [@it-is-it](https://github.com/it-is-it)
+````
