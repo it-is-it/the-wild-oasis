@@ -12,3 +12,6 @@ if (!supabaseAnonKey) {
 
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 export default supabase;
+
+console.log("SUPABASE URL:", import.meta.env.VITE_SUPABASE_URL);
+console.log("SUPABASE ANON KEY:", import.meta.env.VITE_SUPABASE_ANON_KEY);
