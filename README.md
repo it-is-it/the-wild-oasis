@@ -85,8 +85,6 @@ git clone https://github.com/BaraSedih11/the-wild-oasis.git
 cd the-wild-oasis
 ```
 
-````
-
 2. **Install dependencies**
 
 ```bash
@@ -141,4 +139,3 @@ Please feel free to contact me for any issues or improvements.
 **Ishwor Timalsina**
 🔗 [ishwortimalsina.com.np](https://ishwortimalsina.com.np)
 🐙 [@it-is-it](https://github.com/it-is-it)
-````
