@@ -1,103 +1,143 @@
-# 🌴 The Wild Oasis
+````markdown
+# 🌴 The Wild Oasis – Hotel Management Web App
 
-Welcome to **The Wild Oasis**, a unique and vibrant digital destination! This project brings the essence of a serene camping experience into the digital world using modern web technologies and engaging 3D visualizations.
+Welcome to **The Wild Oasis**, a user-friendly hotel management application designed to streamline hotel operations—from bookings and cabins to user management and dashboards. This project implements advanced **JavaScript**, **TypeScript**, **React**, and **database querying** skills in a modern web app built with real-time features, responsive design, and a clean UI.
 
-> **Live Demo**: [Visit The Wild Oasis](https://the-wild-oasis-bara.netlify.app/)  
-> **Login Credentials**: `test@test.com` | `12341234`
-
----
-
-## 🌟 Features
-
-- 🎯 **Immersive 3D Camping Scene** using `Three.js`
-- 🧭 **Interactive Elements** to explore and engage with
-- 📱 **Responsive Layout** suitable for mobile and desktop
-- 🎨 **Smooth User Interface** with a focus on design and performance
+> **Live Demo**: [the-wild-oasis-bara.netlify.app](https://the-wild-oasis-bara.netlify.app)  
+> **Demo Login**: `admin@example.com` / `admin@example`
 
 ---
 
-## 🚀 Technologies Used
+## 🧠 Motivation
 
-- **Three.js** – for creating real-time 3D visuals
-- **JavaScript / TypeScript** – core scripting
-- **HTML5 & CSS3** – layout and styling
-- **Modern Development Stack** – modular code, reusable components, and scalability in mind
+> _"I believe the best way to learn something new is learning by doing."_  
+> This project helped me deepen my React and database integration knowledge while practicing authentication, authorization, state management, and dynamic UI creation.
 
 ---
 
-## 🛠️ Getting Started
+## ✨ Key Features
 
-To run the project locally, follow these steps:
+### 🔐 Authentication & Authorization
 
-### ✅ Prerequisites
+- Secure login for hotel staff only
+- Avatar upload and profile management
+- Password and name change
 
-- [Node.js](https://nodejs.org/) installed
-- A modern browser (e.g., Chrome, Firefox)
+### 🏕️ Cabin Management
 
-### ⚙️ Installation
+- View, create, update, delete cabins
+- Includes cabin photo, name, capacity, price, and discount
+
+### 📅 Booking Management
+
+- Table view of bookings with status: Unconfirmed / Checked-in / Checked-out
+- Track number of nights, guests, breakfast, payment status
+- Add breakfast during check-in if not pre-booked
+
+### ✅ Check-In / Check-Out
+
+- Fast check-in/out with optional breakfast
+- Accept payment manually and update status in app
+
+### 🧍 Guest Management
+
+- Guest data includes full name, email, ID, nationality, and flag
+
+### 📊 Dashboard Insights
+
+- View check-ins and check-outs of the day
+- Stats for last 7, 30, or 90 days (sales, occupancy, bookings)
+- Sales & duration charts (built with `recharts`)
+
+### ⚙️ App Settings
+
+- Control breakfast price, min/max nights, max guests
+- Toggle light/dark mode
+
+---
+
+## 💻 Tech Stack
+
+**Frontend**
+
+- `React`, `TypeScript`, `React Router`, `Redux`
+- `@tanstack/react-query` – for async data handling
+- `styled-components` – CSS-in-JS for styling
+- `react-hook-form`, `react-hot-toast`, `react-icons`
+
+**Backend & DB**
+
+- `Supabase` – authentication + PostgreSQL database
+- `Node.js`, `Express.js` – for any backend extensions
+
+**Other**
+
+- `date-fns` – for date formatting
+- `recharts` – to create elegant charts
+
+---
+
+## 🛠️ Installation Steps
+
+1. **Clone the repo**
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/BaraSedih11/the-wild-oasis.git
 cd the-wild-oasis
+```
+````
 
-# 2. Install dependencies
+2. **Install dependencies**
+
+```bash
 npm install
+```
 
-# 3. Start the development server
+3. **Run the app**
+
+```bash
 npm run dev
 ```
 
-Once the server starts, open your browser and navigate to `http://localhost:5173` (or the provided port).
-
----
-
-## 📁 Project Structure
+4. **Visit the app at**
 
 ```
-the-wild-oasis/
-├── public/         # Static assets (images, icons, etc.)
-├── src/
-│   ├── components/ # Reusable UI components
-│   ├── scenes/     # 3D scene setup and elements
-│   ├── styles/     # Styling with CSS/SCSS
-│   └── utils/      # Helper functions
-├── .gitignore
-├── package.json
-├── README.md
-└── ...
+http://localhost:5173
 ```
 
 ---
 
-## 🤝 Contributing
+## 🧱 Project Structure
 
-Contributions are welcome! Here’s how you can help:
+```
+/src
+├── components     # Reusable UI components
+├── features       # Business logic like bookings, guests, settings
+├── services       # Supabase config and API utilities
+├── hooks          # Custom hooks
+├── styles         # Global styles and themes
+└── pages          # Page-level components (e.g., Dashboard, Login)
+```
 
-1. Fork the repository
-2. Create a new branch
+---
 
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+## 🪴 Future Improvements
 
-3. Commit your changes
+- [ ] Enable PWA support
+- [ ] Add featured and recently viewed tours
+- [ ] UX & UI improvements
+- [ ] Add better error handling and logging
 
-   ```bash
-   git commit -m "Add your message"
-   ```
+---
 
-4. Push to your fork
+## 🐛 Known Bugs
 
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-5. Open a Pull Request
+Please feel free to contact me for any issues or improvements.
 
 ---
 
 ## 🧑‍💻 Author
 
-- **Ishwor Timalsina** – [ishwortimalsina.com.np](https://ishwortimalsina.com.np)
-- GitHub: [@it-is-it](https://github.com/it-is-it)
+**Ishwor Timalsina**
+🔗 [ishwortimalsina.com.np](https://ishwortimalsina.com.np)
+🐙 [@it-is-it](https://github.com/it-is-it)
