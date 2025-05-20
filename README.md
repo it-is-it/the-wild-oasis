@@ -2,8 +2,7 @@
 
 Welcome to **The Wild Oasis**, a user-friendly hotel management application designed to streamline hotel operations—from bookings and cabins to user management and dashboards. This project implements advanced **JavaScript**, **TypeScript**, **React**, and **database querying** skills in a modern web app built with real-time features, responsive design, and a clean UI.
 
-> **Live Demo**: [the-wild-oasis-bara.netlify.app](https://the-wild-oasis-bara.netlify.app)  
-> **Demo Login**: `admin@example.com` / `admin@example`
+> **Live Demo**: [the-wild-oasis-ishwor.netlify.app](https://the-wild-oasis-ishwor.netlify.app/) > **Demo Login**: `test@test.com` / `test1234`
 
 ---
 
@@ -13,6 +12,36 @@ Welcome to **The Wild Oasis**, a user-friendly hotel management application desi
 > This project helped me deepen my React and database integration knowledge while practicing authentication, authorization, state management, and dynamic UI creation.
 
 ---
+
+## 📸 Screenshots
+
+### 🔐 Login Page
+
+![Login Page](/assets/login.png)
+
+### 📊 Dashboard
+
+![Dashboard](/assets/dashboard.png)
+
+### 🛏️ Cabins Page
+
+![Cabins Page](/assets/cabins.png)
+
+### 📘 Bookings Page
+
+![Bookings Page](/assets/bookings.png)
+
+### 🧑‍💼 Create User
+
+![Create User](/assets/createuser.png)
+
+### ⚙️ Settings Page
+
+![Settings Page](/assets/settings.png)
+
+### 📝 Update Account
+
+![Update Account](/assets/updateaccount.png)
 
 ## ✨ Key Features
 
@@ -81,7 +110,7 @@ Welcome to **The Wild Oasis**, a user-friendly hotel management application desi
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/BaraSedih11/the-wild-oasis.git
+git clone https://github.com/it-is-it/the-wild-oasis.git
 cd the-wild-oasis
 ```
 
