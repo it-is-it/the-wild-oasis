@@ -17,31 +17,31 @@ Welcome to **The Wild Oasis**, a user-friendly hotel management application desi
 
 ### 🔐 Login Page
 
-![Login Page](/assets/login.png)
+![Login Page](./public/assets/login.png)
 
 ### 📊 Dashboard
 
-![Dashboard](/assets/dashboard.png)
+![Dashboard](./public/assets/dashboard.png)
 
 ### 🛏️ Cabins Page
 
-![Cabins Page](/assets/cabins.png)
+![Cabins Page](./public/assets/cabins.png)
 
 ### 📘 Bookings Page
 
-![Bookings Page](/assets/bookings.png)
+![Bookings Page](./public/assets/bookings.png)
 
 ### 🧑‍💼 Create User
 
-![Create User](/assets/createuser.png)
+![Create User](./public/assets/createuser.png)
 
 ### ⚙️ Settings Page
 
-![Settings Page](/assets/settings.png)
+![Settings Page](./public/assets/settings.png)
 
 ### 📝 Update Account
 
-![Update Account](/assets/updateaccount.png)
+![Update Account](./public/assets/updateaccount.png)
 
 ## ✨ Key Features
 
