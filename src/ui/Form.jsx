@@ -1,8 +1,8 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const Form = styled.form`
   ${(props) =>
-    props.type === 'regular' &&
+    props.$type === "regular" &&
     css`
       padding: 2.4rem 4rem;
 
@@ -13,7 +13,7 @@ const Form = styled.form`
     `}
 
   ${(props) =>
-    props.type === 'modal' &&
+    props.$type === "modal" &&
     css`
       width: 80rem;
     `}
@@ -22,8 +22,9 @@ const Form = styled.form`
   font-size: 1.4rem;
 `;
 
-Form.defaultProps = {
-  type: 'regular',
-};
+// Create a wrapper component to convert the regular prop to a transient prop
+function FormWrapper({ type = "regular", ...props }) {
+  return <Form $type={type} {...props} />;
+}
 
-export default Form;
+export default FormWrapper;

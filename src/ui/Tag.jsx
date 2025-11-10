@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Tag = styled.span`
   width: fit-content;
@@ -9,8 +9,13 @@ const Tag = styled.span`
   border-radius: 100px;
 
   /* Make these dynamic, based on the received prop */
-  color: var(--color-${(props) => props.type}-700);
-  background-color: var(--color-${(props) => props.type}-100);
+  color: var(--color-${(props) => props.$type}-700);
+  background-color: var(--color-${(props) => props.$type}-100);
 `;
 
-export default Tag;
+// Create a wrapper component to convert the regular prop to a transient prop
+function TagWrapper({ type, ...props }) {
+  return <Tag $type={type} {...props} />;
+}
+
+export default TagWrapper;

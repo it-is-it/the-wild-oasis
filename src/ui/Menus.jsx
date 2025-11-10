@@ -1,8 +1,8 @@
-import { createContext, useContext, useState } from 'react';
-import { createPortal } from 'react-dom';
-import { HiEllipsisVertical } from 'react-icons/hi2';
-import styled from 'styled-components';
-import useOutsideClick from '../hooks/useOutsideClick';
+import { createContext, useContext, useState } from "react";
+import { createPortal } from "react-dom";
+import { HiEllipsisVertical } from "react-icons/hi2";
+import styled from "styled-components";
+import useOutsideClick from "../hooks/useOutsideClick";
 
 const Menu = styled.div`
   display: flex;
@@ -36,8 +36,8 @@ const StyledList = styled.ul`
   box-shadow: var(--shadow-md);
   border-radius: var(--border-radius-md);
 
-  right: ${(props) => props.position.x}px;
-  top: ${(props) => props.position.y}px;
+  right: ${(props) => props.$position.x}px;
+  top: ${(props) => props.$position.y}px;
 `;
 
 const StyledButton = styled.button`
@@ -69,8 +69,8 @@ const MenusContext = createContext();
 
 function Menus({ children }) {
   const [position, setPosition] = useState(null);
-  const [openId, setOpenId] = useState('');
-  const close = () => setOpenId('');
+  const [openId, setOpenId] = useState("");
+  const close = () => setOpenId("");
   const open = setOpenId;
 
   return (
@@ -87,12 +87,12 @@ function Toggle({ id }) {
 
   function handleClick(e) {
     e.stopPropagation();
-    const rect = e.target.closest('button').getBoundingClientRect();
+    const rect = e.target.closest("button").getBoundingClientRect();
     setPosition({
       x: window.innerWidth - rect.width - rect.x,
       y: rect.y + rect.height + 8,
     });
-    openId === '' || openId !== id ? open(id) : close();
+    openId === "" || openId !== id ? open(id) : close();
   }
 
   return (
@@ -109,7 +109,7 @@ function List({ id, children }) {
   if (openId !== id) return null;
 
   return createPortal(
-    <StyledList position={position} ref={ref}>
+    <StyledList $position={position} ref={ref}>
       {children}
     </StyledList>,
     document.body
